@@ -13,7 +13,7 @@ public class Solution {
                 temp = strs[0][index];
             
             foreach(var word in strs) {
-                Console.WriteLine($"Checking word: [{word}]");
+                //Console.WriteLine($"Checking word: [{word}]");
                 if (index >= word.Length || word[index] != temp)
                 {
                     finished = true;
@@ -23,11 +23,11 @@ public class Solution {
             if (!finished)
                 longestPrefix += temp;
             
-            Console.WriteLine($"LP: [{longestPrefix}] -- index: [{index}]");
+            //Console.WriteLine($"LP: [{longestPrefix}] -- index: [{index}]");
             index++;
         }
         
-        Console.WriteLine($"Longest prefix = {longestPrefix}");
+        //Console.WriteLine($"Longest prefix = {longestPrefix}");
         return longestPrefix;
     }
 }
