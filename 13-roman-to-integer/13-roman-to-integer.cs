@@ -3,7 +3,7 @@ public class Solution {
         
         var total = 0;
         for (int i = 0; i < s.Length; i++) {
-            Console.WriteLine($"i == {i} of {s}");
+            //Console.WriteLine($"i == {i} of {s}");
             switch (s[i]) {
                 case 'M':
                     total += 1000;
