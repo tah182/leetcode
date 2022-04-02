@@ -1,9 +1,9 @@
 public class Solution {
     public bool ValidPalindrome(string s) {
-        return isPalindrome(s, 0, s.Length - 1, false);
+        return isPalindrome(s.ToArray(), 0, s.Length - 1, false);
     }
     
-    bool isPalindrome(string s, int left, int right, bool skippedOnce) {
+    bool isPalindrome(char[] s, int left, int right, bool skippedOnce) {
         // special cases
         if (left >= right)
             return true;
