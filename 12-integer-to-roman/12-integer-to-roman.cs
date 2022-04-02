@@ -1,20 +1,19 @@
 public class Solution {
     public string IntToRoman(int num) {
-        List<RomanNumeral> rNums = new List<RomanNumeral> {
-            new RomanNumeral("M", 1000),
-            new RomanNumeral("CM", 900),
-            new RomanNumeral("D", 500),
-            new RomanNumeral("CD", 400),
-            new RomanNumeral("C", 100),
-            new RomanNumeral("XC", 90),
-            new RomanNumeral("L", 50),
-            new RomanNumeral("XL", 40),
-            new RomanNumeral("X", 10),
-            new RomanNumeral("IX", 9),
-            new RomanNumeral("V", 5),
-            new RomanNumeral("IV", 4),
-            new RomanNumeral("I", 1)
-        };
+        Dictionary<int, string> rNums = new Dictionary<int, string>();
+        rNums.Add(1000, "M");
+        rNums.Add(900, "CM");
+        rNums.Add(500, "D");
+        rNums.Add(400, "CD");
+        rNums.Add(100, "C");
+        rNums.Add(90, "XC");
+        rNums.Add(50, "L");
+        rNums.Add(40, "XL");
+        rNums.Add(10, "X");
+        rNums.Add(9, "IX");
+        rNums.Add(5, "V");
+        rNums.Add(4, "IV");
+        rNums.Add(1, "I");
         
         var remainder = num;
         var romanVersion = "";
@@ -22,11 +21,11 @@ public class Solution {
             //Console.WriteLine($"num:[{num}]--remainder:[{remainder}]");
             foreach(var rNum in rNums) {
                 //Console.Write($"checking if {rNum.Number} fits in {num}");
-                if (remainder / rNum.Number > 0) {
+                if (remainder / rNum.Key > 0) {
                     // fits
                     //Console.WriteLine("--yes");
-                    romanVersion += rNum.Letter;
-                    remainder -= rNum.Number;
+                    romanVersion += rNum.Value;
+                    remainder -= rNum.Key;
                     break;
                 } //else 
                     //Console.WriteLine("");
