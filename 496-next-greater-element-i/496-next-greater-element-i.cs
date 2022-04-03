@@ -8,7 +8,6 @@ public class Solution {
         
         for (int i = 0; i < nums1.Length; i++) {
             nums1[i] = indexes.Where(c => c.Key > nums1[i] && c.Value > indexes[nums1[i]])
-                   .OrderBy(c => c.Value)
                    .Select(c => (KeyValuePair<int, int>?)c)
                    .FirstOrDefault()?.Key ?? -1;
             // var startIndex = indexes[nums1[i]];
