@@ -10,10 +10,9 @@ public class Solution {
         if (nextNum == 1)
             return true;
         
-        var hash = nextNum % 9;
         List<int> hashValues = null;
-        if (!prevNum.TryGetValue(hash, out hashValues))
-            prevNum.Add(hash, new List<int> {nextNum});
+        if (!prevNum.TryGetValue(nextNum % 9, out hashValues))
+            prevNum.Add(nextNum % 9, new List<int> {nextNum});
         else {
             if (hashValues.Contains(nextNum))
                 return false;
