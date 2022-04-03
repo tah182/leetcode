@@ -19,10 +19,11 @@ public class Node {
 
 public class Solution {
     public IList<int> Preorder(Node root) {
-        List<int> values = new List<int>();
-        if (root == null)
-            return values;
         
+        if (root == null)
+            return new List<int>();
+        
+        List<int> values = new List<int>();
         values.Add(root.val);
         foreach (var child in root.children) {
             values.AddRange(Preorder(child));
