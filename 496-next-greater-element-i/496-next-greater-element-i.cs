@@ -7,8 +7,7 @@ public class Solution {
             indexes.Add(nums2[i], i);
         
         for (int i = 0; i < nums1.Length; i++) {
-            var index = indexes[nums1[i]];
-            nums1[i] = indexes.Where(c => c.Key > nums1[i] && c.Value > index)
+            nums1[i] = indexes.Where(c => c.Key > nums1[i] && c.Value > indexes[nums1[i]])
                    .OrderBy(c => c.Value)
                    .Select(c => (KeyValuePair<int, int>?)c)
                    .FirstOrDefault()?.Key ?? -1;
