@@ -11,11 +11,9 @@
  */
 public class Solution {
     public ListNode SwapNodes(ListNode head, int k) {
-        var current = head;
         List<ListNode> nodes = new List<ListNode>();
-        while (current != null) {
+        for (var current = head; current != null; current = current.next) {
             nodes.Add(current);
-            current = current.next;
         }
         
         var temp = nodes[k - 1].val;
