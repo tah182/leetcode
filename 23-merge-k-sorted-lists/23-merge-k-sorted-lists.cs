@@ -10,12 +10,14 @@
  * }
  */
 public class Solution {
-    PriorityQueue<ListNode, int> priority = new PriorityQueue<ListNode, int>();
     public ListNode MergeKLists(ListNode[] lists) {
-        ListNode head = null;
-        ListNode current = null;
         if (lists.Length == 0)
             return null;
+        
+        
+        PriorityQueue<ListNode, int> priority = new PriorityQueue<ListNode, int>();
+        ListNode head = null;
+        ListNode current = null;
         
         foreach (var node in lists) {
             if (node != null)
