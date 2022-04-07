@@ -5,7 +5,7 @@ public class Solution {
             stonesList = compareTwoHeaviest(stonesList);
         }
                
-       return stonesList.Count == 0 ? 0 : stonesList[0];
+       return stonesList.Any() ? stonesList[0] : 0;
     }
     
     public List<int> compareTwoHeaviest(List<int> stones) {
