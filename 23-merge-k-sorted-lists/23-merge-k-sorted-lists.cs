@@ -25,7 +25,7 @@ public class Solution {
         }
         
         if (leastNodeListIndex == -1)
-            return null;
+            return leastNode;
         
         lists[leastNodeListIndex] = lists[leastNodeListIndex].next;
         leastNode.next = MergeKLists(lists);
