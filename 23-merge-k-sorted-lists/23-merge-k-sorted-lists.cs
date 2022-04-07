@@ -13,7 +13,7 @@ public class Solution {
     PriorityQueue<ListNode, int> priority = new PriorityQueue<ListNode, int>();
     public ListNode MergeKLists(ListNode[] lists) {
         ListNode head = null;
-        ListNode next = null;
+        ListNode current = null;
         if (lists.Length == 0)
             return null;
         
@@ -23,22 +23,24 @@ public class Solution {
         }
         
         while (priority.Count > 0) {
-            //Console.WriteLine($"[{string.Join(",", priority.UnorderedItems)}]");
-            var temp = priority.Dequeue();
-            //Console.WriteLine($"temp[{temp.val}]");
-            if (head == null)
-                head = temp;
-            else if (next == null) {
-                next = temp;
-                head.next = next;
-            } else {
-                next.next = temp;
-                next = next.next;
+            if (head == null) {
+                head = priority.Dequeue();
+                if (head.next != null)
+                    priority.Enqueue(head.next, head.next.val);
+                
+                continue;
             }
             
-            //Console.WriteLine($"next = {next}[{next?.val}]");
-            if (temp.next != null)
-                priority.Enqueue(temp.next, temp.next.val);
+            if (current == null) {
+                current = priority.Dequeue();
+                head.next = current;
+            } else {
+                current.next = priority.Dequeue();
+                current = current.next;
+            }
+            
+            if (current.next != null)
+                priority.Enqueue(current.next, current.next.val);
         }
         
         return head;
