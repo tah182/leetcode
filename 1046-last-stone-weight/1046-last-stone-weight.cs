@@ -9,14 +9,14 @@ public class Solution {
     }
     
     public List<int> compareTwoHeaviest(List<int> stones) {
-        stones.Sort();
-        if (stones[stones.Count - 1] == stones[stones.Count - 2])
+        stones = stones.OrderByDescending(b => b).ToList();
+        if (stones[0] == stones[1])
         {
-            stones.RemoveAt(stones.Count - 1);
-            stones.RemoveAt(stones.Count - 1);
+            stones.RemoveAt(0);
+            stones.RemoveAt(0);
         } else {
-            stones[stones.Count - 1] = stones[stones.Count - 1] - stones[stones.Count - 2];
-            stones.RemoveAt(stones.Count - 2);
+            stones[0] = stones[0] - stones[1];
+            stones.RemoveAt(1);
         }
         return stones;
     }
