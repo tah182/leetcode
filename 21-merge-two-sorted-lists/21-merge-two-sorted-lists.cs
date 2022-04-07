@@ -18,20 +18,18 @@ public class Solution {
         if (list1 == null && list2 == null)
             return null;
         
-        var returnNode = new ListNode();
+        var returnNode = list1;
         
         if (list1 == null) {
-            returnNode.val = list2.val;
+            returnNode = list2;
             list2 = list2.next;
         } else if (list2 == null) {
-            returnNode.val = list1.val;
             list1 = list1.next;
         } else {
             if (list1.val < list2.val) {
-                returnNode.val = list1.val;
                 list1 = list1.next;
             } else {
-                returnNode.val = list2.val;
+                returnNode = list2;
                 list2 = list2.next;
             }
         }
