@@ -1,7 +1,6 @@
 public class Solution {
     public int LastStoneWeight(int[] stones) {
         var stonesList = stones.ToList();
-        stonesList = stones.OrderByDescending(b => b).ToList();
         while (stonesList.Count > 1) {
             stonesList = compareTwoHeaviest(stonesList);
         }
@@ -10,23 +9,14 @@ public class Solution {
     }
     
     public List<int> compareTwoHeaviest(List<int> stones) {
+        stones = stones.OrderByDescending(b => b).ToList();
         if (stones[0] == stones[1])
         {
             stones.RemoveAt(0);
             stones.RemoveAt(0);
         } else {
-            var remainingStone = stones[0] - stones[1];
-            stones.RemoveAt(0);
-            stones.RemoveAt(0);
-            for (var i = 0; i < stones.Count; i++) {
-                if (remainingStone > stones[i]) {
-                    stones.Insert(i, remainingStone);
-                    i = stones.Count + 1;
-                    remainingStone = -1;
-                }
-            }
-            if (remainingStone > 0)
-                stones.Add(remainingStone);
+            stones[0] = stones[0] - stones[1];
+            stones.RemoveAt(1);
         }
         return stones;
     }
