@@ -11,6 +11,10 @@
  */
 public class Solution {
     public ListNode MergeTwoLists(ListNode list1, ListNode list2) {
+        return MergeLists(list1, list2);
+    }
+    
+    public ListNode MergeLists(ListNode list1, ListNode list2) {
         if (list1 == null && list2 == null)
             return null;
         
@@ -30,7 +34,7 @@ public class Solution {
             }
         }
         
-        returnNode.next = MergeTwoLists(list1, list2);
+        returnNode.next = MergeLists(list1, list2);
         return returnNode;
     }
 }
