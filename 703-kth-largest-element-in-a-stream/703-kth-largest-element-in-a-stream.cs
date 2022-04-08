@@ -11,13 +11,12 @@ public class KthLargest {
         if (nums.Count == 0)
         {
             nums.Add(val);
+        } else if (val <= nums[nums.Count - 1]) {
+            nums.Add(val);
         } else {
             for (int i = 0; i < nums.Count; i++) {
                 if (val > nums[i]) {
                     nums.Insert(i, val);
-                    break;
-                } else if (i == nums.Count - 1) {
-                    nums.Add(val);
                     break;
                 }
             }    
