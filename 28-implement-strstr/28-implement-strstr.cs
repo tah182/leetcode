@@ -4,7 +4,7 @@ public class Solution {
             return 0;
         
         for(int i = 0; i < haystack.Length - needle.Length + 1; i++) {
-            Console.WriteLine($"check {string.Join("", haystack.Skip(i).Take(needle.Length))}");
+            //Console.WriteLine($"check {string.Join("", haystack.Skip(i).Take(needle.Length))}");
             if (string.Join("", haystack.Skip(i).Take(needle.Length)) == needle)
                 return i;
         }
