@@ -5,7 +5,7 @@ public class Solution {
         List<int> merged = new List<int>();
         
         while (m1 < m || n1 < n) {
-            Console.WriteLine($"m1[{m1}]--n1[{n1}]");
+            // Console.WriteLine($"m1[{m1}]--n1[{n1}]");
             if (m1 == m) {
                 merged.Add(nums2[n1]);
                 n1++;
@@ -19,7 +19,7 @@ public class Solution {
                 merged.Add(nums2[n1]);
                 n1++;
             }
-            Console.WriteLine($"[{string.Join(",", merged)}]");
+            // Console.WriteLine($"[{string.Join(",", merged)}]");
         }   
         
         for(int i = 0; i < merged.Count; i++) {
