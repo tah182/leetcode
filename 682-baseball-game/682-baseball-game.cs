@@ -21,10 +21,6 @@ public class Solution {
             }
         }
         
-        var sum = 0;
-        while(stack.Count > 0)
-            sum += stack.Pop();
-        
-        return sum;
+        return stack.Sum(s => s);
     }
 }
