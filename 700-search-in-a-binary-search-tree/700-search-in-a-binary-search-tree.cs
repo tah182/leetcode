@@ -16,11 +16,9 @@ public class Solution {
         if (root == null || root.val == val)
             return root;
         
-        if (val < root.val) {
+        if (val < root.val) 
             return SearchBST(root.left, val);
-        } else {
+        else 
             return SearchBST(root.right, val);
-        }
-        return null;
     }
 }
