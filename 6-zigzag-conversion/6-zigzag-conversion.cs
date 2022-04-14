@@ -5,26 +5,16 @@ public class Solution {
         
         string[] letters = new string[numRows];
         int currRow = 0;
-        var goingUp = true;
+        var goingUp = false;
                 
         foreach (var c in s) {
-            // Console.WriteLine($"C:{c}");
+            // Console.WriteLine($"C:{c} -- currRow:{currRow}");
             letters[currRow] += c;
             
-            if (goingUp) {
-                if (currRow == numRows - 1)
-                {
-                    goingUp = !goingUp;
-                    currRow--;
-                } else
-                    currRow++;
-            } else {
-                if (currRow == 0) {
-                    goingUp = !goingUp;
-                    currRow++;
-                } else
-                    currRow--;
-            }
+            if (currRow == numRows - 1 || currRow == 0)
+                goingUp = !goingUp;
+            
+            currRow += goingUp ? 1 : -1;
         }
         
         return string.Join("", letters);
