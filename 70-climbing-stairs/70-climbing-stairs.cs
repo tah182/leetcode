@@ -2,17 +2,12 @@ public class Solution {
     public int ClimbStairs(int n) {
         if (n <= 3)
             return n;
-        
-        List<int> a = new List<int>();
-        a.Add(0);
-        a.Add(1);
-        a.Add(2);
-        
-        int i = 3;
-        while(i < n + 1) {
-            a.Add(a[i - 1] + a[i - 2]);
-            i++;
+        int[] a = new int[3] { 1, 2, 3 };
+        for(int i = 3; i < n + 1; i++) {
+            a[2] = (a[0] + a[1]);
+            a[0] = a[1];
+            a[1] = a[2];
         }
-        return a[i - 1];
+        return a[2];
     }
 }
