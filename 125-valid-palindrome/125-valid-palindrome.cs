@@ -1,8 +1,24 @@
-using System.Text.RegularExpressions;
+// using System.Text.RegularExpressions;
 public class Solution {
     public bool IsPalindrome(string s) {
-        Regex regex = new Regex("[^a-zA-Z0-9]");
-        s = regex.Replace(s, String.Empty).ToLower();
-        return s == string.Join("", s.ToCharArray().Reverse());
+        int end = s.Length - 1;
+        for(int start = 0; start < end;) {
+            if (!char.IsLetterOrDigit(s[start])) {
+                start++;
+                continue;
+            }
+                
+            if (!char.IsLetterOrDigit(s[end])) {
+                end--;
+                continue;
+            }
+            
+            if (char.ToLower(s[start]) != char.ToLower(s[end]))
+                return false;
+            
+            start++;
+            end--;
+        }
+        return true;
     }
 }
