@@ -6,9 +6,6 @@
 )
 SELECT d.name Department, r.name Employee, salary
 FROM Department d
-INNER JOIN (
-    SELECT name, salary, departmentId
-    FROM Ranks
-    WHERE rank <= 3
-) r
+INNER JOIN Ranks r
 ON d.id = r.departmentId
+WHERE r.rank <= 3
