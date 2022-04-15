@@ -1,23 +1,28 @@
 public class MinStack {
-    List<int> vals;
+    Stack<int> minimum;
+    Stack<int> stack;
     public MinStack() {
-        vals = new List<int>();
+        minimum = new Stack<int>();
+        stack = new Stack<int>();
     }
     
     public void Push(int val) {
-        vals.Add(val);
+        if (minimum.Count == 0 || GetMin() >= val)
+            minimum.Push(val);
+        stack.Push(val);
     }
     
     public void Pop() {
-        vals.RemoveAt(vals.Count - 1);
+        if (stack.Pop() == GetMin())
+            minimum.Pop();
     }
     
     public int Top() {
-        return vals[vals.Count - 1];
+        return stack.Peek();
     }
     
     public int GetMin() {
-        return vals.Min();
+        return minimum.Peek();
     }
 }
 
