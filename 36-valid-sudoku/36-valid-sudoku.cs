@@ -1,5 +1,5 @@
 public class Solution {
-    Dictionary<char, int> checkSum = new Dictionary<char, int>();
+    HashSet<int> checkSum = new HashSet<int>();
     public bool IsValidSudoku(char[][] board) {
         return IsValidRows(board) && IsValidCols(board) && IsValidSquares(board);
     }
@@ -8,11 +8,11 @@ public class Solution {
         foreach (var row in board) {
             checkSum.Clear();
             foreach(char c in row) {
-                if (checkSum.ContainsKey(c))
-                    return false;
+                if (c == '.')
+                    continue;
                 
-                if (c != '.')
-                    checkSum.Add(c, 0);
+                if (!checkSum.Add(c - '0'))
+                    return false;
             }
         }
         return true;
@@ -22,11 +22,10 @@ public class Solution {
         for(int col = 0; col < 9; col++) {
             checkSum.Clear();
             for (int row = 0; row < 9; row++) {
-                if (checkSum.ContainsKey(board[row][col]))
+                if (board[row][col] == '.')
+                    continue;
+                if (!checkSum.Add(board[row][col] - '0'))
                     return false;
-                
-                if (board[row][col] != '.')
-                    checkSum.Add(board[row][col], 0);
             }
         }
         return true;
@@ -59,12 +58,11 @@ public class Solution {
         foreach (var mid in mids) {
             checkSum.Clear();
             foreach(var square in squares) {
-                // Console.WriteLine($"[{mid.x + square.x}][{mid.y + square.y}]={board[mid.x + square.x][mid.y + square.y]}");
-                if (checkSum.ContainsKey(board[mid.x + square.x][mid.y + square.y]))
-                    return false;
+                if (board[mid.x + square.x][mid.y + square.y] == '.')
+                    continue;
                 
-                if (board[mid.x + square.x][mid.y + square.y] != '.')
-                    checkSum.Add(board[mid.x + square.x][mid.y + square.y], 0);
+                if (!checkSum.Add(board[mid.x + square.x][mid.y + square.y] - '0'))
+                    return false;
             }
         }
         return true;
