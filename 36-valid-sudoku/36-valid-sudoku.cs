@@ -1,11 +1,12 @@
 public class Solution {
+    Dictionary<char, int> checkSum;
     public bool IsValidSudoku(char[][] board) {
         return IsValidRows(board) && IsValidCols(board) && IsValidSquares(board);
     }
     
     bool IsValidRows(char[][] board) {
         foreach (var row in board) {
-            Dictionary<char, int> checkSum = new Dictionary<char, int>();
+            checkSum = new Dictionary<char, int>();
             foreach(char c in row) {
                 if (checkSum.ContainsKey(c))
                     return false;
@@ -19,7 +20,7 @@ public class Solution {
     
     bool IsValidCols(char[][] board) {
         for(int col = 0; col < 9; col++) {
-            Dictionary<char, int> checkSum = new Dictionary<char, int>();
+            checkSum = new Dictionary<char, int>();
             for (int row = 0; row < 9; row++) {
                 if (checkSum.ContainsKey(board[row][col]))
                     return false;
@@ -56,7 +57,7 @@ public class Solution {
         };
         
         foreach (var mid in mids) {
-            Dictionary<char, int> checkSum = new Dictionary<char, int>();
+            checkSum = new Dictionary<char, int>();
             foreach(var square in squares) {
                 // Console.WriteLine($"[{mid.x + square.x}][{mid.y + square.y}]={board[mid.x + square.x][mid.y + square.y]}");
                 if (checkSum.ContainsKey(board[mid.x + square.x][mid.y + square.y]))
