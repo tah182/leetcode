@@ -13,12 +13,10 @@ public class MyStack {
     
     public int Pop() {
         temp = new Queue<int>();
-        int lastVal = 0;
-        while (queue.Count > 0) {
-            lastVal = queue.Dequeue();
-            if (queue.Count != 0)
-                temp.Enqueue(lastVal);
+        while (queue.Count > 1) {
+            temp.Enqueue(queue.Dequeue());
         }
+        int lastVal = queue.Dequeue();
         queue = temp;
         return lastVal;
     }
