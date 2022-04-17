@@ -4,6 +4,7 @@ public class MyStack {
     
     public MyStack() {
         queue = new Queue<int>();
+        temp = new Queue<int>();
     }
     
     public void Push(int x) {
