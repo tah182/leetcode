@@ -13,9 +13,24 @@
  */
 public class Solution {
     public int KthSmallest(TreeNode root, int k) {
-        List<int> smallest = Traverse(root);
-        return smallest[k - 1];
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        
+        while (true) {
+            while (root != null) {
+                stack.Push(root);
+                root = root.left;
+            }
+            root = stack.Pop();
+            if (--k == 0) return root.val;
+            root = root.right;
+        }
+        
     }
+    
+    // public int KthSmallest(TreeNode root, int k) {
+    //     List<int> smallest = Traverse(root);
+    //     return smallest[k - 1];
+    // }
     
     public List<int> Traverse(TreeNode root) {
         List<int> smallest = new List<int>();
