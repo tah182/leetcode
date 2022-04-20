@@ -12,16 +12,14 @@
  * }
  */
 public class BSTIterator {
-    LinkedList<int> inOrder;
+    Queue<int> inOrder;
     public BSTIterator(TreeNode root) {
-        inOrder = new LinkedList<int>();
+        inOrder = new Queue<int>();
         InOrderTraverse(root);
     }
     
     public int Next() {
-        int val = inOrder.First.Value;
-        inOrder.RemoveFirst();
-        return val;
+        return inOrder.Dequeue();
     }
     
     public bool HasNext() {
@@ -33,7 +31,7 @@ public class BSTIterator {
             return;
         
         InOrderTraverse(node.left);
-        inOrder.AddLast(node.val);
+        inOrder.Enqueue(node.val);
         InOrderTraverse(node.right);
     }
 }
