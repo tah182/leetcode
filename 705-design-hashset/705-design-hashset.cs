@@ -1,26 +1,27 @@
 public class MyHashSet {
-    Dictionary<int, List<int>> hash;
+    List<int>[] hash;
     
     public MyHashSet() {
-        hash = new Dictionary<int, List<int>>();
+        hash = new List<int>[11];
     }
     
     public void Add(int key) {
-        if (hash.ContainsKey(key % 11)) {
-            if (!hash[key % 11].Any(k => k == key))
-                hash[key % 11].Add(key);       
-        } else
-            hash.Add(key % 11, new List<int> { key });
+        if (hash[key % 11] == null)
+            hash[key % 11] = new List<int> { key };
+        else {
+            if (!hash[key % 11].Contains(key))
+                hash[key % 11].Add(key);
+        }
     }
     
     public void Remove(int key) {
-        if (hash.ContainsKey(key % 11)) 
+        if (hash[key % 11] != null)
             hash[key % 11].Remove(hash[key % 11].SingleOrDefault(k => k == key));
     }
     
     public bool Contains(int key) {
-        if (hash.ContainsKey(key % 11))
-            return hash[key % 11].Any(k => k == key);
+        if (hash[key % 11] != null)
+            return hash[key % 11].Contains(key);
         return false;
     }
 }
