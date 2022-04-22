@@ -1,20 +1,43 @@
 public class MyHashMap {
-    int?[] map;
+    List<KeyVal>[] map;
     public MyHashMap() {
-        map = new int?[1000001];
+        map = new List<KeyVal>[19];
     }
     
     public void Put(int key, int value) {
-        map[key] = value;
+        var temp = map[key % 19];
+        if (temp == null)
+            map[key % 19] = new List<KeyVal> { new KeyVal(key, value ) };
+        else {
+            if (temp.Any(k => k.Key == key)) 
+                map[key % 19].Single(k => k.Key == key).Val = value;
+            else
+                map[key % 19].Add(new KeyVal(key, value));
+        }
     }
     
     public int Get(int key) {
-        var val = map[key];
-        return val ?? -1;
+        var temp = map[key % 19];
+        if (temp != null && temp.Any(k => k.Key == key)) 
+            return temp.Single(k => k.Key == key).Val;
+        
+        return -1;
     }
     
     public void Remove(int key) {
-        map[key] = null;
+        var temp = map[key % 19];
+        if (temp != null && temp.Any(k => k.Key == key)) {
+            temp.Remove(temp.Single(k => k.Key == key));
+        }
+    }
+    
+    class KeyVal {
+        public KeyVal(int key, int val) {
+            this.Key = key;
+            this.Val = val;
+        }
+        public int Key {get;set;}
+        public int Val {get;set;}
     }
 }
 
