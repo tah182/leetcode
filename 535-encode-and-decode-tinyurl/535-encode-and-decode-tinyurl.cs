@@ -1,21 +1,15 @@
 public class Codec {
-    Dictionary<string, string> map = new Dictionary<string, string>();
     // Encodes a URL to a shortened URL
     public string encode(string longUrl) {
-        var textBytes = System.Text.Encoding.UTF8.GetBytes(longUrl);
-        var result = System.Convert.ToBase64String(textBytes);
-        map.Add(result, longUrl);
-        // Console.WriteLine($"{result}");
+        string result = Convert.ToBase64String(Encoding.UTF8.GetBytes(longUrl));
         return $"http://tinyurl.com/{result}";
     }
 
     // Decodes a shortened URL to its original URL.
     public string decode(string shortUrl) {
         string key = shortUrl.Replace("http://tinyurl.com/", "");
-        string value;
-        map.TryGetValue(key, out value);
-        // Console.WriteLine($"{key}---{value}");
-        return value;
+        string result = Encoding.UTF8.GetString(Convert.FromBase64String(key));
+        return result;
     }
 }
 
