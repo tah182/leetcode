@@ -3,11 +3,10 @@
 
 class PeekingIterator {
     IEnumerator<int> head;
-    bool hasNext;
+    bool hasNext = true;
     // iterators refers to the first element of the array.
     public PeekingIterator(IEnumerator<int> iterator) {
         head = iterator;
-        hasNext = true;
     }
     
     // Returns the next element in the iteration without advancing the iterator.
