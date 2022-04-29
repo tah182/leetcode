@@ -1,9 +1,7 @@
 public class Solution {
-    public bool IsBipartite(int[][] graph) {
-        int nodeCounts = graph.Length;
-        
-        bool?[] codes = new bool?[nodeCounts];
-        for(int i=0; i<nodeCounts; i++) {
+    public bool IsBipartite(int[][] graph) {        
+        bool?[] codes = new bool?[graph.Length];
+        for(int i = 0; i < graph.Length; i++) {
             if(codes[i] == null && !dfs(i, graph, false, codes )) {
                 return false;
             }
