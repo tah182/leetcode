@@ -1,25 +1,29 @@
 public class Solution {
+    private HashSet<char>[] hashedWords;
+    
     public int MaxProduct(string[] words) {
+        hashedWords = new HashSet<char>[words.Length];
         var maxWords = 0; 
-        for (int i = 0; i < words.Length - 1; i++){
-            var wordHash = new HashSet<char>();
-            foreach (var c in words[i]) {
-                if (!wordHash.Contains(c))
-                    wordHash.Add(c);
-            }
+        
+        for (int i = 0; i < words.Length - 1; i++) {
+            if (hashedWords[i] == null) 
+                hashedWords[i] = hashWord(words[i]);
+                
             for (int j = i + 1; j < words.Length; j++) {
-                if (!containsDups(wordHash, words[j]))
+                if (hashedWords[j] == null) hashedWords[j] = hashWord(words[j]);
+                if (!hashedWords[i].Intersect(hashedWords[j]).Any())
                     maxWords = Math.Max(maxWords, words[i].Length * words[j].Length);
             }
         }
         return maxWords;
     }
     
-    private bool containsDups(HashSet<char> word1, string word2) {
-        foreach (var c in word2) {
-            if (word1.Contains(c))
-                return true;
+    public HashSet<char> hashWord(string word) {
+        var hashed = new HashSet<char>();
+        foreach (var c in word) {
+            if (!hashed.Contains(c))
+                hashed.Add(c);
         }
-        return false;
+        return hashed;
     }
 }
