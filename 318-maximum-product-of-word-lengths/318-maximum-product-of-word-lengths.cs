@@ -11,7 +11,7 @@ public class Solution {
                 
             for (int j = i + 1; j < words.Length; j++) {
                 if (hashedWords[j] == null) hashedWords[j] = hashWord(words[j]);
-                if (!hashedWords[i].Intersect(hashedWords[j]).Any())
+                if (!HasDup(hashedWords[i], hashedWords[j]))
                     maxWords = Math.Max(maxWords, words[i].Length * words[j].Length);
             }
         }
@@ -25,5 +25,13 @@ public class Solution {
                 hashed.Add(c);
         }
         return hashed;
+    }
+    
+    private bool HasDup(HashSet<char> word1, HashSet<char> word2) {
+        foreach (var c in word2) {
+            if (word1.Contains(c))
+                return true;
+        }
+        return false;
     }
 }
