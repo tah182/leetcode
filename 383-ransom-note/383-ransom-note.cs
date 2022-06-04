@@ -1,5 +1,7 @@
 public class Solution {
     public bool CanConstruct(string ransomNote, string magazine) {
+        if (ransomNote.Length > magazine.Length) return false;
+        
         var map = new Dictionary<char, int>();
         foreach(var c in magazine) {
             if (map.ContainsKey(c))
