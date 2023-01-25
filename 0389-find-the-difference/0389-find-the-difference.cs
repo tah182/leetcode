@@ -1,28 +1,21 @@
 public class Solution {
     public char FindTheDifference(string s, string t) {
         // map of char in s and occurrences
-        var dict = new Dictionary<char, int>();
-        foreach (var l in s) {
-            if (dict.ContainsKey(l))
-                dict[l]++;
-            else
-                dict.Add(l, 1);
+        var maps = new int[26];
+        for (int i = 0; i < s.Length; i++) {
+            // add from s
+            maps[s[i] - 'a']++;
+            // subtract from t
+            maps[t[i] - 'a']--;
         }
+        
+        // subtract the one extra character from t
+        maps[t[t.Length - 1] - 'a']--;
 
-        // remove matches from s using t
-        foreach (var l in t) {
-            // new letter found. return
-            if (!dict.ContainsKey(l))
-                return l;
-            // if letter exist, keep subtracting occurrence
-            else {
-                if (dict[l] == 1)
-                    dict.Remove(l);
-                else
-                    dict[l]--;
-            }
+        for (int i = 0; i < 26; i++) {
+            if (maps[i] == -1) return (char)('a' + (char)i);
         }
-
-        throw new Exception("this should not occur.");
+        
+        throw new Exception("doesn't happen");
     }
 }
