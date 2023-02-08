@@ -10,11 +10,11 @@
 
 public class Solution {
     public TreeNode GetTargetCopy(TreeNode original, TreeNode cloned, TreeNode target) {
-        var originalCopy = FindTarget(original, target, false);
-        return FindTarget(cloned, originalCopy, true);
+        var originalCopy = FindTarget(ref original, ref target, false);
+        return FindTarget(ref cloned, ref originalCopy, true);
     }
     
-    public TreeNode FindTarget(TreeNode tree, TreeNode target, bool byValue) {
+    public TreeNode FindTarget(ref TreeNode tree, ref TreeNode target, bool byValue) {
         if (tree == null) return null;
         
         if (!byValue && tree == target)
@@ -23,6 +23,6 @@ public class Solution {
         if (byValue && tree.val == target.val && tree.left?.val == target.left?.val && tree.right?.val == target.right?.val)
             return tree;
         
-        return FindTarget(tree.left, target, byValue) ?? FindTarget(tree.right, target, byValue);
+        return FindTarget(ref tree.left, ref target, byValue) ?? FindTarget(ref tree.right, ref target, byValue);
     }
 }
