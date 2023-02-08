@@ -10,20 +10,20 @@
 
 public class Solution {
     public TreeNode GetTargetCopy(TreeNode original, TreeNode cloned, TreeNode target) {
-        if (original == target)
-            return cloned;
+        var originalCopy = FindTarget(original, target, false);
+        Console.WriteLine($"{(originalCopy == null ? "not found" : "found")}");
+        return FindTarget(cloned, originalCopy, true);
+    }
+    
+    public TreeNode FindTarget(TreeNode tree, TreeNode target, bool byValue) {
+        if (tree == null) return null;
         
-        if (original.left != null) {
-            var val = GetTargetCopy(original.left, cloned.left, target);
-            if (val != null)
-                return val;
-        }
-        if (original.right != null) {
-            var val = GetTargetCopy(original.right, cloned.right, target);
-            if (val != null)
-                return val;
-        }
+        if (!byValue && tree == target)
+            return tree;
         
-        return null;
+        if (byValue && tree.val == target.val && tree.left?.val == target.left?.val && tree.right?.val == target.right?.val)
+            return tree;
+        
+        return FindTarget(tree.left, target, byValue) ?? FindTarget(tree.right, target, byValue);
     }
 }
