@@ -11,7 +11,6 @@
 public class Solution {
     public TreeNode GetTargetCopy(TreeNode original, TreeNode cloned, TreeNode target) {
         var originalCopy = FindTarget(original, target, false);
-        Console.WriteLine($"{(originalCopy == null ? "not found" : "found")}");
         return FindTarget(cloned, originalCopy, true);
     }
     
