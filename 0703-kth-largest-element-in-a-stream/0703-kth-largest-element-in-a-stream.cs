@@ -7,13 +7,13 @@ public class KthLargest {
         
         _k = k;
         foreach (var num in nums) {
-            Add(num);
+            pq.Enqueue(num, num);
         }
     }
     
     public int Add(int val) {
         pq.Enqueue(val, val);
-        if (pq.Count > _k) {
+        while (pq.Count > _k) {
             pq.Dequeue();
         }
         
