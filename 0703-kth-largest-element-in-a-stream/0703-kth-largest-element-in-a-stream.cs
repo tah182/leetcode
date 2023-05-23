@@ -1,17 +1,21 @@
 public class KthLargest {
-    private int capacity;
-    private PriorityQueue<int, int> pq = new PriorityQueue<int, int>();
+    private int _k;
+    private PriorityQueue<int, int> pq;
     
     public KthLargest(int k, int[] nums) {
-        capacity = k;
-        foreach (var num in nums)
+        pq = new PriorityQueue<int, int>();
+        
+        _k = k;
+        foreach (var num in nums) {
             Add(num);
+        }
     }
     
     public int Add(int val) {
         pq.Enqueue(val, val);
-        while (pq.Count > capacity)
+        if (pq.Count > _k) {
             pq.Dequeue();
+        }
         
         return pq.Peek();
     }
