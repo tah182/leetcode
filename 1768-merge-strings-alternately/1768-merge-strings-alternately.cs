@@ -6,9 +6,9 @@ public class Solution {
         }
         
         if (word1.Length < word2.Length) 
-            result += word2.Substring(word1.Length, word2.Length - word1.Length);
+            return result + word2.Substring(word1.Length, word2.Length - word1.Length);
         if (word2.Length < word1.Length)
-            result += word1.Substring(word2.Length, word1.Length - word2.Length);
+            return result + word1.Substring(word2.Length, word1.Length - word2.Length);
             
         return result;
     }
