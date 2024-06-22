@@ -1,12 +1,14 @@
 public class Solution {
     public IList<bool> KidsWithCandies(int[] candies, int extraCandies) {
         int greatest = -1;
-        foreach (var kid in candies)
-            greatest = Math.Max(kid, greatest);
+        for (int i = 0 ; i < candies.Length; i++) {
+            greatest = Math.Max(candies[i], greatest);
+            candies[i] += extraCandies;
+        }
         
         var result = new List<bool>();
-        foreach (var kid in candies)
-            result.Add(kid + extraCandies >= greatest);
+        for (int i = 0 ; i < candies.Length; i++)
+            result.Add(candies[i] >= greatest);
         
         return result;
     }
