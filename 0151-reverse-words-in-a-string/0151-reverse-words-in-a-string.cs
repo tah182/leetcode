@@ -4,7 +4,6 @@ public class Solution {
         int left = 0, right = words.Length - 1;
 
         while (left < right) {
-            Console.WriteLine($"[{words[left]}][{words[right]}]");
             var temp = words[left];
             words[left] = words[right];
             words[right] = temp;
