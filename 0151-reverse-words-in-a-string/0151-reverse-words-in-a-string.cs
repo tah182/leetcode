@@ -1,5 +1,16 @@
 public class Solution {
     public string ReverseWords(string s) {
-        return string.Join(" ", s.Split(" ").Where(x => x.Length > 0).Reverse());
+        var words = s.Split(' ').Where(x => !string.IsNullOrWhiteSpace(x)).ToArray();
+        int left = 0, right = words.Length - 1;
+
+        while (left < right) {
+            Console.WriteLine($"[{words[left]}][{words[right]}]");
+            var temp = words[left];
+            words[left] = words[right];
+            words[right] = temp;
+            left++;
+            right--;
+        }
+        return String.Join(" ", words);
     }
 }
