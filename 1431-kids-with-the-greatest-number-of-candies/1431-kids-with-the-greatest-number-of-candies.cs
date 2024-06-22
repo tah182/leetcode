@@ -6,10 +6,10 @@ public class Solution {
             candies[i] += extraCandies;
         }
         
-        var result = new List<bool>();
+        var result = new bool[candies.Length];
         for (int i = 0 ; i < candies.Length; i++)
-            result.Add(candies[i] >= greatest);
+            result[i] = candies[i] >= greatest;
         
-        return result;
+        return result.ToList();
     }
 }
