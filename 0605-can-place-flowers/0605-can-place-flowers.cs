@@ -1,21 +1,15 @@
 public class Solution {
     public bool CanPlaceFlowers(int[] flowerbed, int n) {
-        var count = 0;
-        
         for (int i = 0; i < flowerbed.Length; i++) {
-            if (flowerbed[i] == 0) {
-                var emptyLeft = (i == 0) || flowerbed[i - 1] == 0;
-                var emptyRight = (i == flowerbed.Length - 1) || flowerbed[i + 1] == 0;
-                
-                if (emptyLeft && emptyRight) {
-                    flowerbed[i] = 1;
-                    count++;
-                }
-                
-                if (count >= n) return true;
+            if (flowerbed[i] == 0 && n > 0) {
+                if (i == 0 || flowerbed[i - 1] == 0) {
+                    if (i == flowerbed.Length - 1 || flowerbed[i + 1] == 0) {
+                        flowerbed[i] = 1;
+                        n--;
+                    }
+                } 
             }
         }
-        
-        return count >= n;
+        return n == 0;
     }
 }
