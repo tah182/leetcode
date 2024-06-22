@@ -11,45 +11,45 @@
  */
 public class Solution {
     public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
-        int carry = 0;
+        var result = new ListNode();
+        var current = result;
         
-        // just do first to create the listNode
-        ListNode head = new ListNode();
-        if (l1.val + l2.val > 9) {
-            carry = 1;
-            head.val = l1.val + l2.val - 10;
-        } else
-            head.val = l1.val + l2.val;
-        
-        var current = head;
-        l1 = l1.next; l2 = l2.next;
-        while (l1 != null || l2 != null) {
-            var val = 0;
-            if (l1 == null) {
-                val = l2.val + carry;
+        var carry = 0;
+        do {
+            if (l1 == null && l2 != null) {
+                current.val = addNumbers(l2.val, carry, out carry);
                 l2 = l2.next;
-            } else if (l2 == null) {
-                val = l1.val + carry;
+            } else if (l2 == null && l1 != null) {
+                current.val = addNumbers(l1.val, carry, out carry);
                 l1 = l1.next;
-            } else {
-                val = l1.val + l2.val + carry;
+            } else if (l2 != null && l1 != null) {
+                current.val = addNumbers(l1.val + carry, l2.val, out carry);
                 l1 = l1.next;
                 l2 = l2.next;
+            } else if (carry == 1) {
+                current.val = carry;   
+                carry = 0;
             }
             
-            if (val > 9) {
-                val -= 10;
-                carry = 1;
-            } else
-                carry = 0;
-            
-            current.next = new ListNode(val);
-            current = current.next;
+            if (l1 != null || l2 != null || carry == 1)
+            {
+                current.next = new ListNode();
+                current = current.next;
+            }
+        } while (l1 != null || l2 != null || carry == 1);
+        
+        return result;
+    }
+    
+    private int addNumbers(int i, int k, out int carry) {
+        var result = i + k;
+        
+        if (result > 9) { 
+            carry = 1;
+            return result - 10;
         }
         
-        if (carry > 0) 
-            current.next = new ListNode(1);
-        
-        return head;
+        carry = 0;
+        return result;
     }
 }
