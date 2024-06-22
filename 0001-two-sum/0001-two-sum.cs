@@ -5,8 +5,7 @@ public class Solution {
             if (numAndIndex.TryGetValue(target - nums[i], out int ans))
                 return new int[] { ans, i };
             
-            if (!numAndIndex.TryGetValue(nums[i], out _))
-                numAndIndex.Add(nums[i], i);
+            numAndIndex[nums[i]] = i;
         }
         
         return new int[] { -1, -1 };
