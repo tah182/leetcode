@@ -1,14 +1,20 @@
 public class Solution {
     public void MoveZeroes(int[] nums) {
-        int zerosSize = 0; 
-        for (int i = 0; i < nums.Length; i++){
-	        if (nums[i] == 0){
-                zerosSize++; 
-            } else if (zerosSize > 0) {
-	            int t = nums[i];
-	            nums[i] = 0;
-	            nums[i-zerosSize] = t;
+        int n = nums.Length;
+        int j = -1;
+        int i = 0; 
+    
+        while (i < n) {
+            //first occurence of 0
+            if (nums[i] == 0 && j == -1) 
+                j = i;
+            //has zero in the array before a valid digit, hence swap 
+            else if (nums[i] != 0 && j != -1) {
+                nums[j] = nums[i];
+                nums[i] = 0; 
+                j++;  
             }
+            i++;
         }
     }
 }
