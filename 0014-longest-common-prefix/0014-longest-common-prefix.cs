@@ -1,26 +1,18 @@
 public class Solution {
     public string LongestCommonPrefix(string[] strs) {
-        if (strs.Length == 0)
-            return "";
-        if (strs.Length == 1)
-            return strs[0];
-        
-        var longest = "";
-        
-        for (int i = 0; i < int.MaxValue; i++) {
-            if (strs[0].Length <= i)
-                return longest;
-            
-            var current = (strs[0])[i];
-            foreach (var str in strs) {
-                if (str.Length <= i)
-                    return longest;
-                
-                if (str[i] != current)
-                    return longest;
+        var currentLetter = 'c';
+        for (int i = 0; ; i++) {
+            for (int j = 0; j < strs.Length; j++) {
+                if (i >= strs[j].Length)
+                    return strs[j].Substring(0, i);
+
+                if (j == 0)
+                    currentLetter = strs[j][i];
+                else if (currentLetter != strs[j][i])
+                    return strs[j].Substring(0, i);
             }
-            longest = longest + current;
         }
-        return longest;
+
+        return strs[0];
     }
 }
