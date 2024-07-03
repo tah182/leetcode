@@ -29,4 +29,16 @@ My LeetCode work
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/tah182/leetcode/tree/master/0014-longest-common-prefix) |
+## Array
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/tah182/leetcode/tree/master/0011-container-with-most-water) |
+## Two Pointers
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/tah182/leetcode/tree/master/0011-container-with-most-water) |
+## Greedy
+|  |
+| ------- |
+| [0011-container-with-most-water](https://github.com/tah182/leetcode/tree/master/0011-container-with-most-water) |
 <!---LeetCode Topics End-->
