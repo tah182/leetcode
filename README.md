@@ -21,6 +21,7 @@ My LeetCode work
 | ------- |
 | [0014-longest-common-prefix](https://github.com/tah182/leetcode/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/tah182/leetcode/tree/master/0020-valid-parentheses) |
+| [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 ## Stack
 |  |
@@ -34,6 +35,7 @@ My LeetCode work
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/tah182/leetcode/tree/master/0011-container-with-most-water) |
+| [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
 ## Two Pointers
 |  |
 | ------- |
@@ -45,6 +47,7 @@ My LeetCode work
 ## Hash Table
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 ## Queue
 |  |
@@ -54,4 +57,8 @@ My LeetCode work
 |  |
 | ------- |
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
+## Sorting
+|  |
+| ------- |
+| [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
 <!---LeetCode Topics End-->
