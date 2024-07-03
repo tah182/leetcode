@@ -7,7 +7,8 @@ public class Solution {
 
         Stack<char> stack = new Stack<char>();
         foreach (char c in s) {
-            if (closeOpen.TryGetValue(c, out var open) && stack.Count() > 0) {
+            if (closeOpen.TryGetValue(c, out var open)) {
+                if (stack.Count() == 0) return false;
                 if (open == stack.Peek()) {
                     stack.Pop();
                 } else {
