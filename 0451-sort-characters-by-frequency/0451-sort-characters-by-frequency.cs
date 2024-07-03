@@ -9,9 +9,8 @@ public class Solution {
         }
 
         var result = "";
-        var list = dic.ToList();
-        list.Sort((pair1, pair2) => pair2.Value.CompareTo(pair1.Value));
-        foreach (var keyVal in list) {
+        var sorted = dic.OrderByDescending(x => x.Value).ToList();
+        foreach (var keyVal in sorted) {
             for (int i = 0; i < keyVal.Value; i++) {
                 result += keyVal.Key;
             }
