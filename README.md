@@ -16,6 +16,7 @@ My LeetCode work
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/tah182/leetcode/tree/master/0009-palindrome-number) |
+| [0231-power-of-two](https://github.com/tah182/leetcode/tree/master/0231-power-of-two) |
 ## String
 |  |
 | ------- |
@@ -84,4 +85,12 @@ My LeetCode work
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/tah182/leetcode/tree/master/0169-majority-element) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0231-power-of-two](https://github.com/tah182/leetcode/tree/master/0231-power-of-two) |
+## Recursion
+|  |
+| ------- |
+| [0231-power-of-two](https://github.com/tah182/leetcode/tree/master/0231-power-of-two) |
 <!---LeetCode Topics End-->
