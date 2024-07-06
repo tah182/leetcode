@@ -37,6 +37,7 @@ My LeetCode work
 | ------- |
 | [0011-container-with-most-water](https://github.com/tah182/leetcode/tree/master/0011-container-with-most-water) |
 | [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
+| [0169-majority-element](https://github.com/tah182/leetcode/tree/master/0169-majority-element) |
 ## Two Pointers
 |  |
 | ------- |
@@ -49,6 +50,7 @@ My LeetCode work
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
+| [0169-majority-element](https://github.com/tah182/leetcode/tree/master/0169-majority-element) |
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0451-sort-characters-by-frequency](https://github.com/tah182/leetcode/tree/master/0451-sort-characters-by-frequency) |
 ## Queue
@@ -58,12 +60,14 @@ My LeetCode work
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/tah182/leetcode/tree/master/0169-majority-element) |
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0451-sort-characters-by-frequency](https://github.com/tah182/leetcode/tree/master/0451-sort-characters-by-frequency) |
 ## Sorting
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
+| [0169-majority-element](https://github.com/tah182/leetcode/tree/master/0169-majority-element) |
 | [0451-sort-characters-by-frequency](https://github.com/tah182/leetcode/tree/master/0451-sort-characters-by-frequency) |
 ## Heap (Priority Queue)
 |  |
@@ -73,4 +77,8 @@ My LeetCode work
 |  |
 | ------- |
 | [0451-sort-characters-by-frequency](https://github.com/tah182/leetcode/tree/master/0451-sort-characters-by-frequency) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/tah182/leetcode/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
