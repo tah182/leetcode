@@ -1,5 +1,5 @@
 public class Solution {
     public bool IsPowerOfTwo(int n) {
-        return Math.Log2(n) % 1 == 0;
+        return n >= 1 && (n & (n - 1)) == 0;
     }
 }
