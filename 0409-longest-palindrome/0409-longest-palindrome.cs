@@ -9,7 +9,7 @@ public class Solution {
         }
 
         var longest = 0;
-        foreach (var letter in letters.OrderByDescending(x => x.Value)) {
+        foreach (var letter in letters) {
             longest += letter.Value / 2 * 2;
             if (letter.Value % 2 == 0)
                 letters.Remove(letter.Key);
