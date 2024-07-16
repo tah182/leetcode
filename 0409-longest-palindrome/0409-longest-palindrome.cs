@@ -9,15 +9,16 @@ public class Solution {
         }
 
         var longest = 0;
+        var isOdd = false;
         foreach (var letter in letters) {
-            longest += letter.Value / 2 * 2;
             if (letter.Value % 2 == 0)
-                letters.Remove(letter.Key);
-            else
-                letters[letter.Key] = 1;
+                longest += letter.Value;
+            else {
+                longest += letter.Value - 1;
+                isOdd = true;
+            }
         }
 
-        longest += letters.Count > 0 ? 1 : 0;
-        return longest;
+        return isOdd ? longest + 1 : longest;
     }
 }
