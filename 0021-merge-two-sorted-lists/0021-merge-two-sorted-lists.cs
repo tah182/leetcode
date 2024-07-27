@@ -14,40 +14,23 @@ public class Solution {
         if (list1 is null && list2 is null)
             return null;
         
-        ListNode head = null;
-        var current = head;
-        while (list1 is not null || list2 is not null) {
-            ListNode next;
-            if (list1 is null) {
-                if (head == null)
-                    head = list2;
-                else
-                    current.next = list2;
-                break;
-            }
-            if (list2 is null) {
-                if (head == null)
-                    head = list1;
-                else
-                    current.next = list1;
-                break;
-            }
-
+        var returnNode = list1;
+        
+        if (list1 == null) {
+            returnNode = list2;
+            list2 = list2.next;
+        } else if (list2 == null) {
+            list1 = list1.next;
+        } else {
             if (list1.val < list2.val) {
-                next = list1;
                 list1 = list1.next;
             } else {
-                next = list2;
+                returnNode = list2;
                 list2 = list2.next;
             }
-            
-            if (current == null)
-                current = head = next;
-            else {
-                current.next = next;
-                current = current.next;
-            }
         }
-        return head;
+        
+        returnNode.next = MergeTwoLists(list1, list2);
+        return returnNode;
     }
 }
