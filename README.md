@@ -40,6 +40,7 @@ My LeetCode work
 | ------- |
 | [0011-container-with-most-water](https://github.com/tah182/leetcode/tree/master/0011-container-with-most-water) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/tah182/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0027-remove-element](https://github.com/tah182/leetcode/tree/master/0027-remove-element) |
 | [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
 | [0169-majority-element](https://github.com/tah182/leetcode/tree/master/0169-majority-element) |
 | [0561-array-partition](https://github.com/tah182/leetcode/tree/master/0561-array-partition) |
@@ -49,6 +50,7 @@ My LeetCode work
 | ------- |
 | [0011-container-with-most-water](https://github.com/tah182/leetcode/tree/master/0011-container-with-most-water) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/tah182/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0027-remove-element](https://github.com/tah182/leetcode/tree/master/0027-remove-element) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/tah182/leetcode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 ## Greedy
 |  |
