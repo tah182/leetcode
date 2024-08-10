@@ -42,6 +42,7 @@ My LeetCode work
 | [0026-remove-duplicates-from-sorted-array](https://github.com/tah182/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/tah182/leetcode/tree/master/0027-remove-element) |
 | [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
+| [0136-single-number](https://github.com/tah182/leetcode/tree/master/0136-single-number) |
 | [0169-majority-element](https://github.com/tah182/leetcode/tree/master/0169-majority-element) |
 | [0561-array-partition](https://github.com/tah182/leetcode/tree/master/0561-array-partition) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/tah182/leetcode/tree/master/2231-find-first-palindromic-string-in-the-array) |
@@ -98,6 +99,7 @@ My LeetCode work
 ## Bit Manipulation
 |  |
 | ------- |
+| [0136-single-number](https://github.com/tah182/leetcode/tree/master/0136-single-number) |
 | [0231-power-of-two](https://github.com/tah182/leetcode/tree/master/0231-power-of-two) |
 ## Recursion
 |  |
