@@ -54,6 +54,7 @@ My LeetCode work
 | [0026-remove-duplicates-from-sorted-array](https://github.com/tah182/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/tah182/leetcode/tree/master/0027-remove-element) |
 | [0141-linked-list-cycle](https://github.com/tah182/leetcode/tree/master/0141-linked-list-cycle) |
+| [0160-intersection-of-two-linked-lists](https://github.com/tah182/leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/tah182/leetcode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 ## Greedy
 |  |
@@ -66,6 +67,7 @@ My LeetCode work
 | ------- |
 | [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
 | [0141-linked-list-cycle](https://github.com/tah182/leetcode/tree/master/0141-linked-list-cycle) |
+| [0160-intersection-of-two-linked-lists](https://github.com/tah182/leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0169-majority-element](https://github.com/tah182/leetcode/tree/master/0169-majority-element) |
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0409-longest-palindrome](https://github.com/tah182/leetcode/tree/master/0409-longest-palindrome) |
@@ -118,6 +120,7 @@ My LeetCode work
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/tah182/leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0141-linked-list-cycle](https://github.com/tah182/leetcode/tree/master/0141-linked-list-cycle) |
+| [0160-intersection-of-two-linked-lists](https://github.com/tah182/leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 ## Tree
 |  |
 | ------- |
