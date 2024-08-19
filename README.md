@@ -105,6 +105,7 @@ My LeetCode work
 |  |
 | ------- |
 | [0136-single-number](https://github.com/tah182/leetcode/tree/master/0136-single-number) |
+| [0222-count-complete-tree-nodes](https://github.com/tah182/leetcode/tree/master/0222-count-complete-tree-nodes) |
 | [0231-power-of-two](https://github.com/tah182/leetcode/tree/master/0231-power-of-two) |
 ## Recursion
 |  |
@@ -125,6 +126,7 @@ My LeetCode work
 |  |
 | ------- |
 | [0144-binary-tree-preorder-traversal](https://github.com/tah182/leetcode/tree/master/0144-binary-tree-preorder-traversal) |
+| [0222-count-complete-tree-nodes](https://github.com/tah182/leetcode/tree/master/0222-count-complete-tree-nodes) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -133,4 +135,9 @@ My LeetCode work
 |  |
 | ------- |
 | [0144-binary-tree-preorder-traversal](https://github.com/tah182/leetcode/tree/master/0144-binary-tree-preorder-traversal) |
+| [0222-count-complete-tree-nodes](https://github.com/tah182/leetcode/tree/master/0222-count-complete-tree-nodes) |
+## Binary Search
+|  |
+| ------- |
+| [0222-count-complete-tree-nodes](https://github.com/tah182/leetcode/tree/master/0222-count-complete-tree-nodes) |
 <!---LeetCode Topics End-->
