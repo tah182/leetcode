@@ -32,6 +32,7 @@ My LeetCode work
 | ------- |
 | [0020-valid-parentheses](https://github.com/tah182/leetcode/tree/master/0020-valid-parentheses) |
 | [0144-binary-tree-preorder-traversal](https://github.com/tah182/leetcode/tree/master/0144-binary-tree-preorder-traversal) |
+| [0232-implement-queue-using-stacks](https://github.com/tah182/leetcode/tree/master/0232-implement-queue-using-stacks) |
 ## Trie
 |  |
 | ------- |
@@ -75,6 +76,7 @@ My LeetCode work
 ## Queue
 |  |
 | ------- |
+| [0232-implement-queue-using-stacks](https://github.com/tah182/leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 ## Counting
 |  |
@@ -140,4 +142,8 @@ My LeetCode work
 |  |
 | ------- |
 | [0222-count-complete-tree-nodes](https://github.com/tah182/leetcode/tree/master/0222-count-complete-tree-nodes) |
+## Design
+|  |
+| ------- |
+| [0232-implement-queue-using-stacks](https://github.com/tah182/leetcode/tree/master/0232-implement-queue-using-stacks) |
 <!---LeetCode Topics End-->
