@@ -34,6 +34,7 @@ My LeetCode work
 | [0020-valid-parentheses](https://github.com/tah182/leetcode/tree/master/0020-valid-parentheses) |
 | [0144-binary-tree-preorder-traversal](https://github.com/tah182/leetcode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0232-implement-queue-using-stacks](https://github.com/tah182/leetcode/tree/master/0232-implement-queue-using-stacks) |
+| [0341-flatten-nested-list-iterator](https://github.com/tah182/leetcode/tree/master/0341-flatten-nested-list-iterator) |
 ## Trie
 |  |
 | ------- |
@@ -81,6 +82,7 @@ My LeetCode work
 |  |
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/tah182/leetcode/tree/master/0232-implement-queue-using-stacks) |
+| [0341-flatten-nested-list-iterator](https://github.com/tah182/leetcode/tree/master/0341-flatten-nested-list-iterator) |
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 ## Counting
 |  |
@@ -135,10 +137,12 @@ My LeetCode work
 | ------- |
 | [0144-binary-tree-preorder-traversal](https://github.com/tah182/leetcode/tree/master/0144-binary-tree-preorder-traversal) |
 | [0222-count-complete-tree-nodes](https://github.com/tah182/leetcode/tree/master/0222-count-complete-tree-nodes) |
+| [0341-flatten-nested-list-iterator](https://github.com/tah182/leetcode/tree/master/0341-flatten-nested-list-iterator) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0144-binary-tree-preorder-traversal](https://github.com/tah182/leetcode/tree/master/0144-binary-tree-preorder-traversal) |
+| [0341-flatten-nested-list-iterator](https://github.com/tah182/leetcode/tree/master/0341-flatten-nested-list-iterator) |
 ## Binary Tree
 |  |
 | ------- |
@@ -152,4 +156,9 @@ My LeetCode work
 |  |
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/tah182/leetcode/tree/master/0232-implement-queue-using-stacks) |
+| [0341-flatten-nested-list-iterator](https://github.com/tah182/leetcode/tree/master/0341-flatten-nested-list-iterator) |
+## Iterator
+|  |
+| ------- |
+| [0341-flatten-nested-list-iterator](https://github.com/tah182/leetcode/tree/master/0341-flatten-nested-list-iterator) |
 <!---LeetCode Topics End-->
