@@ -23,6 +23,7 @@ My LeetCode work
 | [0014-longest-common-prefix](https://github.com/tah182/leetcode/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/tah182/leetcode/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
+| [0242-valid-anagram](https://github.com/tah182/leetcode/tree/master/0242-valid-anagram) |
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0409-longest-palindrome](https://github.com/tah182/leetcode/tree/master/0409-longest-palindrome) |
 | [0451-sort-characters-by-frequency](https://github.com/tah182/leetcode/tree/master/0451-sort-characters-by-frequency) |
@@ -70,6 +71,7 @@ My LeetCode work
 | [0141-linked-list-cycle](https://github.com/tah182/leetcode/tree/master/0141-linked-list-cycle) |
 | [0160-intersection-of-two-linked-lists](https://github.com/tah182/leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0169-majority-element](https://github.com/tah182/leetcode/tree/master/0169-majority-element) |
+| [0242-valid-anagram](https://github.com/tah182/leetcode/tree/master/0242-valid-anagram) |
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0409-longest-palindrome](https://github.com/tah182/leetcode/tree/master/0409-longest-palindrome) |
 | [0451-sort-characters-by-frequency](https://github.com/tah182/leetcode/tree/master/0451-sort-characters-by-frequency) |
@@ -89,6 +91,7 @@ My LeetCode work
 | ------- |
 | [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
 | [0169-majority-element](https://github.com/tah182/leetcode/tree/master/0169-majority-element) |
+| [0242-valid-anagram](https://github.com/tah182/leetcode/tree/master/0242-valid-anagram) |
 | [0451-sort-characters-by-frequency](https://github.com/tah182/leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0561-array-partition](https://github.com/tah182/leetcode/tree/master/0561-array-partition) |
 ## Heap (Priority Queue)
