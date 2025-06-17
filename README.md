@@ -22,6 +22,7 @@ My LeetCode work
 | ------- |
 | [0014-longest-common-prefix](https://github.com/tah182/leetcode/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/tah182/leetcode/tree/master/0020-valid-parentheses) |
+| [0038-count-and-say](https://github.com/tah182/leetcode/tree/master/0038-count-and-say) |
 | [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
 | [0242-valid-anagram](https://github.com/tah182/leetcode/tree/master/0242-valid-anagram) |
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
