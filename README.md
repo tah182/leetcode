@@ -28,6 +28,7 @@ My LeetCode work
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0409-longest-palindrome](https://github.com/tah182/leetcode/tree/master/0409-longest-palindrome) |
 | [0451-sort-characters-by-frequency](https://github.com/tah182/leetcode/tree/master/0451-sort-characters-by-frequency) |
+| [1894-merge-strings-alternately](https://github.com/tah182/leetcode/tree/master/1894-merge-strings-alternately) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/tah182/leetcode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 ## Stack
 |  |
@@ -62,6 +63,7 @@ My LeetCode work
 | [0027-remove-element](https://github.com/tah182/leetcode/tree/master/0027-remove-element) |
 | [0141-linked-list-cycle](https://github.com/tah182/leetcode/tree/master/0141-linked-list-cycle) |
 | [0160-intersection-of-two-linked-lists](https://github.com/tah182/leetcode/tree/master/0160-intersection-of-two-linked-lists) |
+| [1894-merge-strings-alternately](https://github.com/tah182/leetcode/tree/master/1894-merge-strings-alternately) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/tah182/leetcode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 ## Greedy
 |  |
