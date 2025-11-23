@@ -142,6 +142,7 @@ My LeetCode work
 | [0025-reverse-nodes-in-k-group](https://github.com/tah182/leetcode/tree/master/0025-reverse-nodes-in-k-group) |
 | [0141-linked-list-cycle](https://github.com/tah182/leetcode/tree/master/0141-linked-list-cycle) |
 | [0160-intersection-of-two-linked-lists](https://github.com/tah182/leetcode/tree/master/0160-intersection-of-two-linked-lists) |
+| [0328-odd-even-linked-list](https://github.com/tah182/leetcode/tree/master/0328-odd-even-linked-list) |
 ## Tree
 |  |
 | ------- |
