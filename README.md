@@ -17,6 +17,7 @@ My LeetCode work
 | ------- |
 | [0009-palindrome-number](https://github.com/tah182/leetcode/tree/master/0009-palindrome-number) |
 | [0231-power-of-two](https://github.com/tah182/leetcode/tree/master/0231-power-of-two) |
+| [1071-greatest-common-divisor-of-strings](https://github.com/tah182/leetcode/tree/master/1071-greatest-common-divisor-of-strings) |
 ## String
 |  |
 | ------- |
@@ -28,6 +29,7 @@ My LeetCode work
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0409-longest-palindrome](https://github.com/tah182/leetcode/tree/master/0409-longest-palindrome) |
 | [0451-sort-characters-by-frequency](https://github.com/tah182/leetcode/tree/master/0451-sort-characters-by-frequency) |
+| [1071-greatest-common-divisor-of-strings](https://github.com/tah182/leetcode/tree/master/1071-greatest-common-divisor-of-strings) |
 | [1894-merge-strings-alternately](https://github.com/tah182/leetcode/tree/master/1894-merge-strings-alternately) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/tah182/leetcode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 ## Stack
