@@ -1,19 +1,14 @@
 public class Solution {
     public bool IsSubsequence(string s, string t) {
-        if (s.Length > t.Length) return false;
-        
-        var s1 = 0;
-        var t1 = 0;
-        
-        
-        while (s1 < s.Length && t1 < t.Length) {
-            if (s[s1] == t[t1]) {
-                s1++;
-                t1++;
-            } else
-                t1++;
+        int sPointer = 0, tPointer = 0;
+        while (sPointer < s.Length && tPointer < t.Length) {
+            Console.WriteLine($"s={s} sPointer={s[sPointer]} tPointer={t[tPointer]}");
+            if (s[sPointer] == t[tPointer]) {
+                sPointer++;
+            }
+            tPointer++;
         }
-        
-        return s1 == s.Length;
+
+        return sPointer == s.Length;
     }
 }
