@@ -26,6 +26,7 @@ My LeetCode work
 | [0038-count-and-say](https://github.com/tah182/leetcode/tree/master/0038-count-and-say) |
 | [0049-group-anagrams](https://github.com/tah182/leetcode/tree/master/0049-group-anagrams) |
 | [0242-valid-anagram](https://github.com/tah182/leetcode/tree/master/0242-valid-anagram) |
+| [0345-reverse-vowels-of-a-string](https://github.com/tah182/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0387-first-unique-character-in-a-string](https://github.com/tah182/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0409-longest-palindrome](https://github.com/tah182/leetcode/tree/master/0409-longest-palindrome) |
 | [0451-sort-characters-by-frequency](https://github.com/tah182/leetcode/tree/master/0451-sort-characters-by-frequency) |
@@ -67,6 +68,7 @@ My LeetCode work
 | [0027-remove-element](https://github.com/tah182/leetcode/tree/master/0027-remove-element) |
 | [0141-linked-list-cycle](https://github.com/tah182/leetcode/tree/master/0141-linked-list-cycle) |
 | [0160-intersection-of-two-linked-lists](https://github.com/tah182/leetcode/tree/master/0160-intersection-of-two-linked-lists) |
+| [0345-reverse-vowels-of-a-string](https://github.com/tah182/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
 | [1894-merge-strings-alternately](https://github.com/tah182/leetcode/tree/master/1894-merge-strings-alternately) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/tah182/leetcode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 ## Greedy
