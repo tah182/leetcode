@@ -1,30 +1,24 @@
 public class Solution {
     public string ReverseVowels(string s) {
-        var vowels = new HashSet<char> { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
-        var chars = s.ToCharArray();
-        int left = 0, right = chars.Length - 1;
+        List<char> vowels = new List<char>() { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+        char[] str = s.ToCharArray();
 
+        int left = 0, right = s.Length - 1;
         while (left < right) {
-            var leftVowel = vowels.TryGetValue(chars[left], out _);
-            var rightVowel = vowels.TryGetValue(chars[right], out _);
-
-            if (leftVowel && rightVowel) {
-                var temp = chars[left];
-                chars[left] = chars[right];
-                chars[right] = temp;
-
+            Console.WriteLine($"left: {str[left]} right: {str[right]}");
+            if (vowels.Contains(str[left]) && vowels.Contains(str[right])) {
+                Console.WriteLine("Swapping");
+                var temp = str[left];
+                str[left] = str[right];
+                str[right] = temp;
                 left++;
                 right--;
                 continue;
             }
-
-            if (!leftVowel)
-                left++;
-
-            if (!rightVowel)
-                right--;
+            if (!vowels.Contains(str[left])) left++;
+            if (!vowels.Contains(str[right])) right--;
         }
 
-        return new string(chars);
+        return new string(str);
     }
 }
