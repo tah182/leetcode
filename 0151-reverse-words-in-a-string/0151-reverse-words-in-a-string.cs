@@ -1,15 +1,12 @@
 public class Solution {
     public string ReverseWords(string s) {
-        var words = s.Split(' ').Where(x => !string.IsNullOrWhiteSpace(x)).ToArray();
-        int left = 0, right = words.Length - 1;
-
-        while (left < right) {
-            var temp = words[left];
-            words[left] = words[right];
-            words[right] = temp;
-            left++;
-            right--;
+        List<string> words = s.Split(" ").ToList();
+        StringBuilder returnVal = new StringBuilder();
+        for (int i = words.Count - 1; i >= 0; i--) {
+            var trimmedWord = words[i].Trim();
+            returnVal.Append(trimmedWord);
+            if (trimmedWord.Length > 0) returnVal.Append(" ");
         }
-        return String.Join(" ", words);
+        return returnVal.ToString().Trim();
     }
 }
