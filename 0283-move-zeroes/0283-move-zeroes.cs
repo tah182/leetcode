@@ -1,20 +1,23 @@
 public class Solution {
     public void MoveZeroes(int[] nums) {
-        int n = nums.Length;
-        int j = -1;
-        int i = 0; 
-    
-        while (i < n) {
-            //first occurence of 0
-            if (nums[i] == 0 && j == -1) 
-                j = i;
-            //has zero in the array before a valid digit, hence swap 
-            else if (nums[i] != 0 && j != -1) {
-                nums[j] = nums[i];
-                nums[i] = 0; 
-                j++;  
+        int left = 0, right = 1;
+        while (right < nums.Length && left < nums.Length) {
+            // Console.WriteLine($"current progress: {string.Join(", ", nums)}, left: {nums[left]} right: {nums[right]}");
+            if (nums[left] != 0) {
+                left++;
+                continue;
             }
-            i++;
+            if (nums[right] == 0 || right <= left) {
+                right++;
+                continue;
+            }
+
+            if (nums[left] == 0) {
+                nums[left] = nums[right];
+                nums[right] = 0;
+                left++;
+                right++;
+            }
         }
     }
 }
