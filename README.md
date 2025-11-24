@@ -55,6 +55,7 @@ My LeetCode work
 | [0169-majority-element](https://github.com/tah182/leetcode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/tah182/leetcode/tree/master/0217-contains-duplicate) |
 | [0561-array-partition](https://github.com/tah182/leetcode/tree/master/0561-array-partition) |
+| [1431-kids-with-the-greatest-number-of-candies](https://github.com/tah182/leetcode/tree/master/1431-kids-with-the-greatest-number-of-candies) |
 | [2231-find-first-palindromic-string-in-the-array](https://github.com/tah182/leetcode/tree/master/2231-find-first-palindromic-string-in-the-array) |
 ## Two Pointers
 |  |
